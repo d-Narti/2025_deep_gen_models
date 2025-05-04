@@ -6,17 +6,17 @@
 
 Мной был написана функция по генератору типов на основе их описания в файле styles.py. Стили выбираются пропорционально заданным частотам, вероятность подсчитывается правильно. Вот пример отбработки функции:
 
-![result1.png](\imgs\result1.png)
+![result1.png](https://github.com/d-Narti/2025_deep_gen_models/blob/hw1/HW_1.Bias_gen_and_autoencoders/imgs/result1.png)
 
 Далее я реализовал функции для MLE и Байесовского распределений, а также для загрузки аватаров и генерации новых, в итоге генерация на основе формулы Байеса показала себя лучше, чем MLE. Вероятно Байесовский подход устойчивее к выбросам и малым выборкам, а также избегает нулевых вероятностей, что критично при перемножении вероятностей по пикселям. Вот получившиеся изображения:
 
 - MLE
 
-![result1.png](\imgs\result2.png)
+![result2.png](https://github.com/d-Narti/2025_deep_gen_models/blob/hw1/HW_1.Bias_gen_and_autoencoders/imgs/result2.png)
 
 - Байес
 
-![result1.png](\imgs\result3.png)
+![result3.png](https://github.com/d-Narti/2025_deep_gen_models/blob/hw1/HW_1.Bias_gen_and_autoencoders/imgs/result3.png)
 
 Вероятно, что для каждого пикселя зауженное разнообразие, которого не хватает для качественной генерации, и вследствии, даже случайная генерация фактически приводит к одинаковым пикселям, поэтому сгенерированные семплы каждого метода одинаковы. 
 
@@ -25,11 +25,11 @@
 
 - MLE
 
-![result1.png](\imgs\result4.png)
+![result4.png](https://github.com/d-Narti/2025_deep_gen_models/blob/hw1/HW_1.Bias_gen_and_autoencoders/imgs/result4.png)
 
 - Байес
 
-![result1.png](\imgs\result5.png)
+![result5.png](https://github.com/d-Narti/2025_deep_gen_models/blob/hw1/HW_1.Bias_gen_and_autoencoders/imgs/result5.png)
 
     Изменения стали видимыми: теперь возможно небольшое увеличение разнообразия при генерации, но основная структура пикселей всё ещё сильно зафиксирована.
 
